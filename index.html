@@ -1,0 +1,35 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="wi dth=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guess My Number!</title>
+</head>
+<body>
+    <header>
+        <h1>Guess My Number!</h1>
+        <p class = "between">(Between 1 and 20)</p>
+        <button class = "btn again">Again!</button>
+        <div class = "number">?</div>
+    </header>
+    <!--<main> : Structural element that represents the main content of a document-->
+    <main>
+        <!-- <Section> : section in the web document -->
+        <section class = "left"> <!-- The left section of the page -->
+            <input type="number" class = "guess"  />
+            <button class ="btn check">Check!</button>
+        </section>
+        <section class = "right">  <!-- the right section of the page where the score is -->
+            <p class = "message">Start guessing..</p>
+            <p class = "label-score"> Score: <span class = "score">20</span></p>
+            <p class = "label-highscore">
+                Highscore: <span class = "highscore">0</span>
+            </p>
+        </section>
+    </main>
+    <!-- connecting javascript (functionality) -->
+    <script src = "script.js"></script>
+</body>
+</html>
