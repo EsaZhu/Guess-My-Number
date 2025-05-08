@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+/*
+Asteriks (*) This is the margin of the entire page. It is applied to all the elements in the webpage.
+ When the page is resized, the margins of the elements are also moving with it.
+ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* html tag targets the root element of the HTML document which is the single, top-level element in the DOM hierarchy
+that contains all the elements in the webpage (children). DOM is the connection between HTML elements and JS code */
+html {
+    /* Most browsers have a default font size of 16px. The font size is 62.5% of the default font.
+     62.5% of 16px is 10px. 1 rem (root em) is the font size of a root element which is the default 16px.*/
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+/*
+This is for the body of the document. Changes the background color and font
+ */
+body{
+    font-family:'Press Start 2P', sans-serif;
+    color: #eee;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;;
+    background-image: url("MarioBackground.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+
+}
+
+/*
+This is for the position of the title of the game
+ */
+header{
+    position: relative;
+    height: 35vh;
+    border-bottom: 7px solid #eee;
+}
+
+/*
+This is for the position of the other parts of the game. Left and right sides
+ */
+
+/* BODY LAYOUT */
+main{
+    height: 65vh;
+    color: #eee;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+/* for the left side */
+.left{
+    width: 52rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* For the right size*/
+
+.right{
+    width: 52rem;
+    font-size: 2rem;
+}
+
+/* For the title of the game (header1) */
+h1{
+    font-size: 5rem;
+    text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;;
+    text-align: center;
+    position:absolute;
+    /* Sets the vertical and horizontal positions of an element*/
+    width: 100%;
+    top: 52%;
+    left: 50%;
+    /* reposition element in a certain direction (horizonta/vertical) */
+    transform:translate(-50%, -50%);
+}
+
+/* */
+/* For the textbox where the correct number is revealed */
+.number {
+    background-image: url("emptyBlock.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: contain;
+    color: black;
+    font-size: 6rem;
+    width: 15rem;
+    padding: 3rem 0rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+/* For the in between numbers line hint (between 1 and 20) */
+.between {
+    font-size: 1.4rem;
+    text-align: center;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;;
+    position: absolute;
+    width: 100%;
+    top: 68%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+
+}
+
+.again{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.guess {
+    background: none;
+    border: 4px solid #eee;
+    font-family: inherit;
+    color: inherit;
+    font-size: 5rem;
+    padding: 2.5rem;
+    width: 25rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 3rem;
+}
+.btn {
+    border: #eee;
+    box-shadow: 2px 2px 2px 1px black ;
+    background-color: #eee;
+    color: #222;
+    font-size: 2rem;
+    font-family: inherit;
+    padding: 2rem 3rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 2px 2px 2px 1px black ;
+    background-color: #ccc;
+}
+
+.message {
+    margin-bottom: 8rem;
+    height: 3rem;
+}
+
+.label-score {
+    margin-bottom: 2rem;
+}
+
