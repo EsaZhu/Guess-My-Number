@@ -23,14 +23,16 @@ html {
 This is for the body of the document. Changes the background color and font
  */
 body{
+    background-color: black;
     font-family:'Press Start 2P', sans-serif;
     color: #eee;
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;;
-    background-image: url("MarioBackground.gif");
+   background-image: url("MarioBackground.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
+
 
 }
 
@@ -95,8 +97,9 @@ h1{
     background-attachment: fixed;
     background-position: center center;
     background-size: contain;
-    color: black;
-    font-size: 6rem;
+    color: #d36028;
+    text-shadow: 5px 5px 0 #000;
+    font-size: 4.5rem;
     width: 15rem;
     padding: 3rem 0rem;
     text-align: center;
@@ -112,7 +115,7 @@ h1{
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;;
     position: absolute;
     width: 100%;
-    top: 68%;
+    top: 70%;
     left: 50%;
     transform:translate(-50%, -50%);
 
